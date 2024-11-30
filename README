@@ -1,0 +1,21 @@
+Shuriken is an open source, research-grade continous-energy Monte Carlo code developed to test transport methods. Specifically, this repository provides test cases for neutron unresolved resonance physics and sensitivity coefficient calculation.
+
+Shuriken is written in C++17 and tested using the compiler g++ (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)
+
+The source code may be built from a simple Makefile and creates four executables:
+  1) shuriken_ab12 for two analytical benchmarks
+  2) shuriken_ab3 for a third analytical benchmark
+  3) shuriken_bigten for the BIGTEN benchmark
+  4) shuriken_mcfr for a molten chloride fast reactor model
+The differences between each of these is they have their own main routine, as Shuriken, being a research code, does not support I/O.
+
+The nuclear data is from ENDF/B-VII.1 and in ACE format using the three-digit .7xxnc extension. The files must be included in a directory called data. Relevant libraries can be downloaded from Los Alamos National Laboratory here:
+
+https://nucleardata.lanl.gov/ace/endf71x/
+
+The following files must be included:
+
+11023.712nc	17035.712nc	24053.710nc	26056.710nc	28060.710nc	4009.710nc	40094.710nc	42095.710nc	42100.710nc	92235.712nc
+14028.710nc	17037.712nc	24054.710nc	26057.710nc	28061.710nc	40090.710nc	40096.710nc	42096.710nc	6000.710nc	92236.710nc
+14029.710nc	24050.710nc	25055.710nc	26058.710nc	28062.710nc	40091.710nc	42092.710nc	42097.710nc	92234.710nc	92238.710nc
+14030.710nc	24052.710nc	26054.710nc	28058.710nc	28064.710nc	40092.710nc	42094.710nc	42098.710nc	92235.710nc	92238.712nc
