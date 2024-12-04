@@ -1,4 +1,8 @@
-Shuriken is an open source, research-grade continous-energy Monte Carlo code developed to test transport methods. Specifically, this repository provides test cases for neutron unresolved resonance physics and sensitivity coefficient calculation.
+Shuriken is an open source, research-grade continous-energy Monte Carlo code developed to test transport methods. 
+
+Specifically, this repository provides test cases for neutron unresolved resonance physics and sensitivity coefficient calculation documented in this article:
+
+https://arxiv.org/abs/2412.00307
 
 Shuriken is written in C++17 and tested using the compiler g++ (GCC) 13.2.1 20231205 (Red Hat 13.2.1-6)
 
